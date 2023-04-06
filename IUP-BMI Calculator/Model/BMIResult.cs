@@ -21,9 +21,9 @@ namespace IUP_BMI_Calculator.Model
         [MaxLength(250)]
         public double Weight { get; set; }
         [MaxLength(250)]
-        public double BMIScore { get; set; }
+        public double BMISCORE { get; set; }
         [MaxLength(250)]
-        public string Result { get; set; }
+        public string BMIResultt { get; set; }
 
     }
 }
