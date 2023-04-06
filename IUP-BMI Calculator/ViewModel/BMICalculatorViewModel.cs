@@ -48,7 +48,7 @@ namespace IUP_BMI_Calculator.ViewModel
         {
             // TO DO
             App.
-
+                ;
         }
 
         [RelayCommand]

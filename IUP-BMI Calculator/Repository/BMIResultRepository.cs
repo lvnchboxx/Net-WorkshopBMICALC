@@ -30,7 +30,20 @@ namespace IUP_BMI_Calculator.Repository
 
         public void AddNewBMIResult(string name, double height, double weight, double BMIScore, string BMIResult)
         {
-            // TODO
-        }
+            int result = 0;
+            try
+            {
+                
+                Init();
+
+                
+                if (string.IsNullOrEmpty(name))
+                    throw new Exception("Valid name required");
+
+                
+                result = conn.Insert(new BMIResult { BMISCORE = BMIScore });
+                result = conn.Insert(new BMIResult { BMIRESULT = BMIResult });
+
+            }
     }
 }
